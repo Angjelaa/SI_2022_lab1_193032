@@ -3,3 +3,4 @@ Pineapple x7
 Apple x10
 Grapefruit x 27
 Banana x54
+Stobi Flips x 8
