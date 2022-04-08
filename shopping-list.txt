@@ -2,4 +2,4 @@ Avocado x2
 Pineapple x3
 Apple x10
 Grapefruit x30
-Banana x10
+Banana x54
