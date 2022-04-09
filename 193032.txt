@@ -1,0 +1,80 @@
+- git clone https://github.com/Angjelaa/SI_2021_lab1_193032 - го клонираме github репото локално 
+
+- git init
+
+- git add . - со оваа команда се додаваат на сцена сите новокреирани фајлови
+
+- $ git commit -m "Add 5 items to the shopping_list" - се прави верзија на локалното репо 
+$ git commit -m "Add 5 items to the shopping_list"
+[master c9a6926] Add 5 items to the shopping_list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+
+- $ git commit -a -m "Add quantities to the items" - се додава количина на производите со -a едитираниот фајл го ставаме во commit
+[master d9c0f80] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+-  $ git branch branch1 - се креира нова гранка branch1
+Switched to a new branch 'branch1'
+
+- $ git checkout master - се префрламе кон master гранката
+Switched to branch 'master'
+
+- $ git branch branch2 - се креира нова гранка branch2
+Switched to a new branch 'branch2'
+
+- $ git log  - преглед на досегашните активности 
+commit 6bdbb33ed4c175a16525c0182cf37f9dbf4155f7 (HEAD -> master, branch2, branch1)
+Author: Angjelaa <angela.vidanovic@gmail.com>
+Date:   Sat Apr 9 01:46:25 2022 +0200
+
+    Added quantity
+
+commit ffbe702d29e2d86df26dba548ef9a96aba3bd53b
+Author: Angjelaa <angela.vidanovic@gmail.com>
+Date:   Sat Apr 9 01:45:41 2022 +0200
+
+    Added shopping list
+
+commit b3d2e495e2073fd90dcd876297c53c5d5108d56a (origin/master, origin/HEAD)
+Author: Angjelaa <82408738+Angjelaa@users.noreply.github.com>
+Date:   Sat Apr 9 01:08:50 2022 +0200
+
+    Update README.md
+
+commit f9cdf163cfe3e2720c5a209d5806c48e617f63f8
+Author: Angjelaa <82408738+Angjelaa@users.noreply.github.com>
+Date:   Sat Apr 9 01:08:06 2022 +0200
+
+    Initial commit
+
+- $ git push - ги прикачуваме фајловите на локалната гранка master кон master гранката на github
+
+- $ git checkout branch1 - се префрламе на гранката  branch1
+
+- $ git commit -a -m "Change quantity of item #5" -  се менува количина на производот бр.5 со -a едитираниот фајл го ставаме во commit
+
+- $ git checkout master - се враќаме на гранката master
+
+- $ git commit -a -m "Change quantity of item #2" -  се менува количина на производот бр.2 со -a едитираниот фајл го ставаме во commit
+
+- $ git push --set-upstream origin branch2 - ги синхронизираме гранките со оддалечениот репозиториум
+
+- $ git checkout branch2 - се префрламе на гранката  branch2
+
+- $ git commit -a -m "Change quantity of item #4" -  се менува количина на производот бр.4 со -a едитираниот фајл го ставаме во commit
+
+- $ git log 
+commit 329eb780b12008a5908c41328a5236573c10032f (HEAD -> branch2)
+Author: Angjelaa <angela.vidanovic@gmail.com>
+Date:   Sat Apr 9 01:52:23 2022 +0200
+
+    Changed quantity of item 4
+
+- $ git commit -a -m "Modify item #4 and add item #6" -  се менува количина на производот бр.6 и бр.4 со -a едитираниот фајл го ставаме во commit
+
+- $ git checkout master - се префрламе на гранката master
+    git merge branch1 - ја спојуваме гранката branch1 кон master, успешно без конфликт
+
+- $ git merge branch2 -  ја спојуваме гранката branch2 кон master, неуспешно со конфликт
