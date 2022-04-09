@@ -1,6 +1,6 @@
 Avocado x2
-Pineapple x7
+Pineapple x3
 Apple x10
-Grapefruit x 27
+Grapefruit x 10
 Banana x54
 Stobi Flips x 8
